@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viajes Nacionales | Charito Viajera</title>
+<link rel="stylesheet" href="css/nacionales.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="globe-canvas"></canvas>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <a href="index.html" class="nav-back">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Inicio
+    </a>
+    <span class="nav-logo">Charito Viajera</span>
+    <span class="nav-tag">Nacional</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-lines"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        Viajes Nacionales
+        <span class="dot"></span>
+      </div>
+      <h1>La Argentina<br>te <em>sorprende</em></h1>
+      <p class="hero-desc">
+        Descubrí los paisajes más increíbles del país con paquetes<br>
+        diseñados para que solo pienses en disfrutar.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#paquetes" class="btn-primary">Ver paquetes</a>
+        <a href="como funciona.html" class="btn-ghost">¿Cómo funciona?</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Explorá</span>
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon">
+    <div class="ribbon-inner">
+      <span>✦ Jujuy</span><span>✦ Bariloche</span><span>✦ Mendoza</span>
+      <span>✦ Ushuaia</span><span>✦ Salta</span><span>✦ Córdoba</span>
+      <span>✦ Puerto Madryn</span><span>✦ Jujuy</span><span>✦ Bariloche</span>
+      <span>✦ Mendoza</span><span>✦ Ushuaia</span><span>✦ Salta</span>
+    </div>
+  </div>
+
+  <!-- PAQUETES -->
+  <section class="paquetes" id="paquetes">
+    <div class="section-header">
+      <p class="section-sup">Destinos seleccionados</p>
+      <h2>Paquetes <em>Disponibles</em></h2>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- JUJUY -->
+      <article class="card" data-region="Norte">
+        <div class="card-visual">
+          <img src="imagenes/jujuy.jpeg" alt="Jujuy"
+               onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80'">
+          <div class="card-shine"></div>
+          <div class="card-region">Norte</div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Jujuy</h3>
+            <div class="card-flag">🏔️ 🌵 🎨</div>
+          </div>
+          <ul class="features">
+            <li><span class="icon">✈</span>Pasajes incluidos</li>
+            <li><span class="icon">🏨</span>Hotel céntrico</li>
+            <li><span class="icon">☀️</span>Desayuno diario</li>
+            <li><span class="icon">🚌</span>Traslados</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="card-btn">
+              Consultar precio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MENDOZA -->
+      <article class="card" data-region="Cuyo">
+        <div class="card-visual">
+          <img src="imagenes/mendoza.jpeg" alt="Mendoza"
+               onerror="this.src='https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900&q=80'">
+          <div class="card-shine"></div>
+          <div class="card-region">Cuyo</div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Mendoza</h3>
+            <div class="card-flag">🍷 🏔️ 🌿</div>
+          </div>
+          <ul class="features">
+            <li><span class="icon">✈</span>Pasajes incluidos</li>
+            <li><span class="icon">🏨</span>Hoteles seleccionados</li>
+            <li><span class="icon">🗺</span>Excursiones y bodegas</li>
+            <li><span class="icon">🛡</span>Seguro médico</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="card-btn">
+              Consultar precio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- BARILOCHE -->
+      <article class="card" data-region="Patagonia">
+        <div class="card-visual">
+          <img src="imagenes/bariloche.png" alt="Bariloche"
+               onerror="this.src='https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&q=80'">
+          <div class="card-shine"></div>
+          <div class="card-region">Patagonia</div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Bariloche</h3>
+            <div class="card-flag">🏔️ ❄️ 🍫</div>
+          </div>
+          <ul class="features">
+            <li><span class="icon">🏨</span>Resort Premium</li>
+            <li><span class="icon">🍽</span>All Inclusive</li>
+            <li><span class="icon">🚌</span>Traslados aeropuerto</li>
+            <li><span class="icon">📞</span>Asistencia 24hs</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="card-btn">
+              Consultar precio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <div class="why-inner">
+      <div class="why-text">
+        <p class="section-sup">¿Por qué elegirnos?</p>
+        <h2>Viajá con<br><em>confianza</em></h2>
+        <p class="why-desc">Más de 8 años armando escapadas por toda la Argentina con atención personalizada de principio a fin.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">🗺️</div>
+          <h4>Todo el país</h4>
+          <p>Desde la Puna jujeña hasta la Patagonia, cubrimos cada rincón.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">📋</div>
+          <h4>Todo incluido</h4>
+          <p>Vuelos, hotel, traslados y desayuno en un solo paquete.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">💬</div>
+          <h4>Soporte 24/7</h4>
+          <p>Atención personalizada antes, durante y después del viaje.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">💳</div>
+          <h4>Financiación</h4>
+          <p>Cuotas sin interés y opciones de pago flexibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Charito Viajera</span>
+      <span class="footer-copy">© 2025 · Todos los derechos reservados</span>
+    </div>
+  </footer>
+
+<script>
+  /* ── CANVAS: ANIMATED GRID + DOTS ── */
+  const canvas = document.getElementById('globe-canvas');
+  const ctx    = canvas.getContext('2d');
+  let W, H;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const DOTS = [];
+  function makeDot() {
+    return {
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 1.2 + .3,
+      vx: (Math.random() - .5) * .25,
+      vy: (Math.random() - .5) * .25,
+      a: Math.random() * .5 + .1
+    };
+  }
+  for (let i = 0; i < 90; i++) DOTS.push(makeDot());
+
+  let gridOffset = 0;
+
+  function drawGrid() {
+    const spacing = 60;
+    ctx.strokeStyle = 'rgba(0,212,255,0.04)';
+    ctx.lineWidth = 1;
+    const ox = gridOffset % spacing;
+    for (let x = -spacing + ox; x < W + spacing; x += spacing) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    const oy = gridOffset * .6 % spacing;
+    for (let y = -spacing + oy; y < H + spacing; y += spacing) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+  }
+
+  function drawDots() {
+    DOTS.forEach(d => {
+      d.x += d.vx; d.y += d.vy;
+      if (d.x < -2) d.x = W + 2;
+      if (d.x > W + 2) d.x = -2;
+      if (d.y < -2) d.y = H + 2;
+      if (d.y > H + 2) d.y = -2;
+
+      ctx.beginPath();
+      ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(0,212,255,${d.a})`;
+      ctx.fill();
+    });
+
+    for (let i = 0; i < DOTS.length; i++) {
+      for (let j = i + 1; j < DOTS.length; j++) {
+        const dx = DOTS[i].x - DOTS[j].x;
+        const dy = DOTS[i].y - DOTS[j].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.moveTo(DOTS[i].x, DOTS[i].y);
+          ctx.lineTo(DOTS[j].x, DOTS[j].y);
+          ctx.strokeStyle = `rgba(0,212,255,${(1 - dist/120) * .06})`;
+          ctx.lineWidth = .8;
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    gridOffset += .3;
+    drawGrid();
+    drawDots();
+    requestAnimationFrame(loop);
+  }
+  loop();
+
+  /* ── CUSTOM CURSOR ── */
+  document.addEventListener('mousemove', e => {
+    document.body.style.setProperty('--cx', e.clientX + 'px');
+    document.body.style.setProperty('--cy', e.clientY + 'px');
+  });
+
+  /* ── NAV SCROLL ── */
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  /* ── INTERSECTION OBSERVER ── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.card, .why-item').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 0.13}s`;
+    observer.observe(el);
+  });
+
+  /* ── CARD TILT ── */
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      card.style.transform = `translateY(-6px) rotateY(${x*5}deg) rotateX(${-y*3}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+</script>
+</body>
+</html>

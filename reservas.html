@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas | Charito Viajera</title>
+  <link rel="stylesheet" href="css/reservas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="main-nav">
+    <a href="index.html" class="nav-back">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Inicio
+    </a>
+    <a href="index.html" class="nav-logo">Charito Viajera</a>
+    <span class="nav-tag">Reservas</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80" alt="Avión">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="dot"></span> Tu próximo viaje empieza acá <span class="dot"></span></p>
+      <h1>Hacé tu<br><em>reserva</em></h1>
+      <p class="hero-desc">Completá el formulario o contactanos directamente por WhatsApp.<br>Te respondemos en menos de 24 horas.</p>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon">
+    <div class="ribbon-inner">
+      <span>✦ Nacionales</span><span>✦ Internacionales</span><span>✦ Cruceros</span>
+      <span>✦ Caribe</span><span>✦ Europa</span><span>✦ Brasil</span>
+      <span>✦ All Inclusive</span><span>✦ Grupos</span><span>✦ Familias</span>
+      <span>✦ Nacionales</span><span>✦ Internacionales</span><span>✦ Cruceros</span>
+      <span>✦ Caribe</span><span>✦ Europa</span><span>✦ Brasil</span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <section class="main-section">
+    <div class="main-inner">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="left-col">
+
+        <!-- PASOS -->
+        <div class="pasos reveal-up">
+          <span class="section-label">¿Cómo funciona?</span>
+          <h2>Reservar es<br><em>muy simple</em></h2>
+          <div class="pasos-list">
+            <div class="paso">
+              <div class="paso-num">01</div>
+              <div class="paso-body">
+                <h4>Completá el formulario</h4>
+                <p>Indicanos tus datos, el destino que te interesa y las fechas tentativas.</p>
+              </div>
+            </div>
+            <div class="paso">
+              <div class="paso-num">02</div>
+              <div class="paso-body">
+                <h4>Recibís tu presupuesto</h4>
+                <p>En menos de 24hs Charito te envía un presupuesto personalizado.</p>
+              </div>
+            </div>
+            <div class="paso">
+              <div class="paso-num">03</div>
+              <div class="paso-body">
+                <h4>Confirmás y abonás la seña</h4>
+                <p>Elegís el paquete, abonás una seña y tu viaje queda reservado.</p>
+              </div>
+            </div>
+            <div class="paso">
+              <div class="paso-num">04</div>
+              <div class="paso-body">
+                <h4>¡A hacer las valijas!</h4>
+                <p>Recibís todos los vouchers y documentación. Solo te queda viajar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEPARADOR IMAGEN -->
+        <div class="img-lateral reveal-up">
+          <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800&q=80" alt="Destinos">
+          <div class="img-lateral-overlay">
+            <div class="img-lateral-text">
+              <span>Más de 40 destinos</span>
+              <strong>Nacionales e internacionales</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHATSAPP DIRECTO -->
+        <div class="wa-card reveal-up">
+          <div class="wa-top">
+            <div class="wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h3>¿Preferís hablar directamente?</h3>
+              <p>Si no querés rellenar el formulario, escribile directo a Charito por WhatsApp. Te va a asesorar personalmente y armar el viaje ideal para vos.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5491157006371?text=Hola%20Charito!%20Quiero%20hacer%20una%20reserva" target="_blank" class="wa-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Escribir a Charito ahora
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <div class="wa-note">
+            <i class="fa-solid fa-circle-info"></i>
+            Respondemos todos los días de 9 a 19hs (Lun–Vie) y de 10 a 15hs (Sáb)
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COLUMNA DERECHA: FORMULARIO -->
+      <div class="form-col reveal-right">
+        <div class="form-wrap">
+          <div class="form-header">
+            <div class="form-num">✈</div>
+            <h3>Formulario de reserva</h3>
+            <p>Completá los datos y Charito te arma el viaje perfecto.</p>
+          </div>
+
+          <form id="reserva-form" action="https://formspree.io/f/mnjyalzg" method="POST" novalidate>
+
+            <!-- DATOS PERSONALES -->
+            <div class="form-section-title">
+              <span class="fs-num">1</span> Tus datos
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 ..." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <!-- VIAJE -->
+            <div class="form-section-title">
+              <span class="fs-num">2</span> Tu viaje
+            </div>
+            <div class="form-group">
+              <label for="destino">Destino de interés *</label>
+              <select id="destino" name="destino" required>
+                <option value="" disabled selected>¿A dónde querés viajar?</option>
+                <optgroup label="🇦🇷 Nacionales">
+                  <option>Jujuy</option>
+                  <option>Mendoza</option>
+                  <option>Bariloche</option>
+                  <option>Ushuaia</option>
+                  <option>Salta</option>
+                  <option>Puerto Madryn</option>
+                  <option>Córdoba</option>
+                  <option>Otro nacional</option>
+                </optgroup>
+                <optgroup label="🌍 Internacionales">
+                  <option>Europa</option>
+                  <option>Caribe</option>
+                  <option>Brasil</option>
+                  <option>Asia</option>
+                  <option>Crucero</option>
+                  <option>Otro internacional</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha-ida">Fecha de ida</label>
+                <input type="date" id="fecha-ida" name="fecha_ida">
+              </div>
+              <div class="form-group">
+                <label for="fecha-vuelta">Fecha de vuelta</label>
+                <input type="date" id="fecha-vuelta" name="fecha_vuelta">
+              </div>
+            </div>
+
+            <!-- PASAJEROS -->
+            <div class="form-section-title">
+              <span class="fs-num">3</span> Pasajeros
+            </div>
+            <div class="pasajeros-grid">
+              <div class="pasajero-item">
+                <label>Adultos</label>
+                <div class="counter-wrap">
+                  <button type="button" class="counter-btn" data-target="adultos" data-action="minus">−</button>
+                  <input type="number" id="adultos" name="adultos" value="1" min="1" max="20" readonly>
+                  <button type="button" class="counter-btn" data-target="adultos" data-action="plus">+</button>
+                </div>
+              </div>
+              <div class="pasajero-item">
+                <label>Niños</label>
+                <div class="counter-wrap">
+                  <button type="button" class="counter-btn" data-target="ninos" data-action="minus">−</button>
+                  <input type="number" id="ninos" name="ninos" value="0" min="0" max="10" readonly>
+                  <button type="button" class="counter-btn" data-target="ninos" data-action="plus">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- PREFERENCIAS -->
+            <div class="form-section-title">
+              <span class="fs-num">4</span> Preferencias
+            </div>
+            <div class="form-group">
+              <label>Tipo de alojamiento</label>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="alojamiento" value="Hotel"> Hotel</label>
+                <label class="chip"><input type="radio" name="alojamiento" value="Resort"> Resort</label>
+                <label class="chip"><input type="radio" name="alojamiento" value="All Inclusive"> All Inclusive</label>
+                <label class="chip"><input type="radio" name="alojamiento" value="Indiferente" checked> Indiferente</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notas">Comentarios adicionales</label>
+              <textarea id="notas" name="notas" rows="3" placeholder="Fechas flexibles, necesidades especiales, presupuesto estimado..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submit-btn">
+              <span class="btn-text">Solicitar presupuesto</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <div class="form-success" id="form-success">
+              <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <strong>¡Solicitud enviada!</strong>
+              <p>Charito te va a contactar en menos de 24 horas con tu presupuesto personalizado.<br>¡Es tiempo de viajar!</p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GARANTÍAS -->
+  <section class="garantias-section">
+    <div class="garantias-inner">
+      <div class="garantia reveal-up">
+        <div class="g-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4>Reserva segura</h4>
+        <p>Agencia habilitada bajo legajo oficial #21007.</p>
+      </div>
+      <div class="garantia reveal-up">
+        <div class="g-icon"><i class="fa-solid fa-credit-card"></i></div>
+        <h4>Financiación</h4>
+        <p>Cuotas sin interés y múltiples medios de pago.</p>
+      </div>
+      <div class="garantia reveal-up">
+        <div class="g-icon"><i class="fa-solid fa-headset"></i></div>
+        <h4>Soporte total</h4>
+        <p>Asistencia antes, durante y después del viaje.</p>
+      </div>
+      <div class="garantia reveal-up">
+        <div class="g-icon"><i class="fa-solid fa-rotate-left"></i></div>
+        <h4>Flexibilidad</h4>
+        <p>Opciones de cambio y cancelación según el paquete.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Charito Viajera</span>
+      <span class="footer-copy">© 2026 · Todos los derechos reservados · Legajo #21007</span>
+    </div>
+  </footer>
+
+  <!-- REDES FLOTANTES -->
+  <div class="social-float">
+    <a href="https://www.instagram.com/charitoviajera/" target="_blank" class="sf-instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/charitolaviajera" target="_blank" class="sf-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://wa.me/5491157006371" target="_blank" class="sf-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+
+<script>
+  /* CANVAS */
+  const canvas=document.getElementById('bg-canvas'),ctx=canvas.getContext('2d');
+  let W,H,dots=[];
+  function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+  resize(); window.addEventListener('resize',()=>{resize();initDots();});
+  function makeDot(){return{x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.2+.3,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,a:Math.random()*.4+.08};}
+  function initDots(){dots=[];for(let i=0;i<80;i++)dots.push(makeDot());}
+  initDots();
+  let go=0;
+  function draw(){
+    ctx.clearRect(0,0,W,H); go+=.25;
+    ctx.strokeStyle='rgba(240,165,0,0.04)'; ctx.lineWidth=1;
+    const sp=65,ox=go%sp;
+    for(let x=-sp+ox;x<W+sp;x+=sp){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+    const oy=go*.55%sp;
+    for(let y=-sp+oy;y<H+sp;y+=sp){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+    dots.forEach(d=>{
+      d.x+=d.vx; d.y+=d.vy;
+      if(d.x<-2)d.x=W+2; if(d.x>W+2)d.x=-2;
+      if(d.y<-2)d.y=H+2; if(d.y>H+2)d.y=-2;
+      ctx.beginPath(); ctx.arc(d.x,d.y,d.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(240,165,0,${d.a})`; ctx.fill();
+    });
+    for(let i=0;i<dots.length;i++) for(let j=i+1;j<dots.length;j++){
+      const dx=dots[i].x-dots[j].x,dy=dots[i].y-dots[j].y,dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<110){ctx.beginPath();ctx.moveTo(dots[i].x,dots[i].y);ctx.lineTo(dots[j].x,dots[j].y);ctx.strokeStyle=`rgba(240,165,0,${(1-dist/110)*.04})`;ctx.lineWidth=.7;ctx.stroke();}
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+
+  /* CURSOR */
+  document.addEventListener('mousemove',e=>{
+    document.body.style.setProperty('--cx',e.clientX+'px');
+    document.body.style.setProperty('--cy',e.clientY+'px');
+  });
+
+  /* NAV */
+  const nav=document.getElementById('main-nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+
+  /* REVEAL */
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+  }),{threshold:0.1});
+  document.querySelectorAll('.reveal-up,.reveal-right,.garantia').forEach((el,i)=>{
+    el.style.transitionDelay=`${i*0.08}s`; obs.observe(el);
+  });
+
+  /* COUNTERS */
+  document.querySelectorAll('.counter-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const inp=document.getElementById(btn.dataset.target);
+      const min=parseInt(inp.min), max=parseInt(inp.max), val=parseInt(inp.value);
+      if(btn.dataset.action==='plus' && val<max) inp.value=val+1;
+      if(btn.dataset.action==='minus' && val>min) inp.value=val-1;
+    });
+  });
+
+  /* DATE MIN */
+  const today=new Date().toISOString().split('T')[0];
+  document.getElementById('fecha-ida').min=today;
+  document.getElementById('fecha-vuelta').min=today;
+  document.getElementById('fecha-ida').addEventListener('change',function(){
+    document.getElementById('fecha-vuelta').min=this.value;
+  });
+
+  /* FORM */
+  const form=document.getElementById('reserva-form');
+  const btn=document.getElementById('submit-btn');
+  const success=document.getElementById('form-success');
+
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    const required=form.querySelectorAll('[required]');
+    let valid=true;
+    required.forEach(f=>{f.classList.remove('error');if(!f.value.trim()){f.classList.add('error');valid=false;}});
+    if(!valid){
+      form.querySelector('.error').scrollIntoView({behavior:'smooth',block:'center'});
+      return;
+    }
+    btn.classList.add('loading'); btn.disabled=true;
+    try{
+      const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+      if(res.ok){btn.style.display='none';success.classList.add('visible');form.reset();}
+      else{
+        const json=await res.json();
+        showError(json.errors?json.errors.map(e=>e.message).join(', '):'Hubo un error. Intentá de nuevo.');
+        btn.classList.remove('loading'); btn.disabled=false;
+      }
+    }catch{
+      showError('Sin conexión. Revisá tu internet e intentá de nuevo.');
+      btn.classList.remove('loading'); btn.disabled=false;
+    }
+  });
+
+  function showError(msg){
+    let el=document.getElementById('form-error');
+    if(!el){el=document.createElement('div');el.id='form-error';el.className='form-error';btn.parentNode.insertBefore(el,btn);}
+    el.textContent=msg; el.style.display='block';
+  }
+</script>
+</body>
+</html>
